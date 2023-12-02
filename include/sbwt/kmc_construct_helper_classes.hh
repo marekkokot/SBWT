@@ -25,7 +25,7 @@ struct Node{
     Node();
     Node(kmer_t kmer);
 
-    static inline int64_t size_in_bytes(){
+    static constexpr inline int64_t size_in_bytes(){
         return kmer_t::size_in_bytes() + sizeof(char); // char is the edge flags
     }
 

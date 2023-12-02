@@ -203,6 +203,8 @@ target_link_libraries(sbwt_static PRIVATE
   kmc_core)
 
 if(WIN32)
+  target_compile_options(sbwt_static PRIVATE /bigobj)
+  target_compile_options(sbwt PRIVATE /bigobj)
   target_compile_definitions(sbwt_static PRIVATE MSVC_COMPILER)
   target_compile_definitions(sbwt PRIVATE MSVC_COMPILER)
 endif()
