@@ -6,7 +6,14 @@
 #include <random>
 #include <sys/types.h>
 #include <sys/stat.h>
+#ifdef _WIN32
+#include <io.h>
+//from: https://www.dre.vanderbilt.edu/~schmidt/DOC_ROOT/ACE/ace/os_include/sys/os_stat.h
+//but probably does not matter
+#define S_IRWXU 00700         /* read, write, execute: owner. */
+#else
 #include <unistd.h>
+#endif
 #include <fcntl.h>
 #include <errno.h>
 #include <thread>
