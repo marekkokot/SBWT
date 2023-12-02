@@ -4,9 +4,9 @@
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/iosfwd/googletest
-[submodule "KMC"]
-	path = KMC
-	url = https://github.com/algbio/KMC
 [submodule "SeqIO"]
 	path = SeqIO
 	url = https://github.com/jnalanko/SeqIO
+[submodule "KMC"]
+	path = KMC
+	url = https://github.com/marekkokot/KMC-for-sbwt
