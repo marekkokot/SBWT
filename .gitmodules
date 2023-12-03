@@ -1,6 +1,3 @@
-[submodule "sdsl-lite"]
-	path = sdsl-lite
-	url = https://github.com/iosfwd/sdsl-lite/
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/iosfwd/googletest
@@ -10,3 +7,6 @@
 [submodule "KMC"]
 	path = KMC
 	url = https://github.com/marekkokot/KMC-for-sbwt
+[submodule "sdsl-lite"]
+	path = sdsl-lite
+	url = https://github.com/marekkokot/sdsl-lite-for-sbwt
