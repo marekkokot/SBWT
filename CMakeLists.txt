@@ -33,39 +33,39 @@ string(TIMESTAMP SBWT_BUILD_TIMESTAMP)
 configure_file(${PROJECT_SOURCE_DIR}/version.h.in ${PROJECT_BINARY_DIR}/include/version.h @ONLY)
 
 ## Require zlib
-if(NOT ZLIB)
-  if(NOT CMAKE_BUILD_ZLIB)
-    find_library(ZLIB NAMES z REQUIRED)
-  endif()
+# if(NOT ZLIB)
+#   if(NOT CMAKE_BUILD_ZLIB)
+#     find_library(ZLIB NAMES z REQUIRED)
+#   endif()
 
-  if(CMAKE_BUILD_ZLIB OR ZLIB MATCHES NOTFOUND)
-    configure_file(CMakeLists_zlib.txt.in ${CMAKE_CURRENT_BINARY_DIR}/external/zlib-download/CMakeLists.txt)
-    execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
-      RESULT_VARIABLE result
-      WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/external/zlib-download )
-    if(result)
-      message(FATAL_ERROR "CMake step for zlib failed: ${result}")
-    endif()
-    execute_process(COMMAND ${CMAKE_COMMAND} --build .
-      RESULT_VARIABLE result
-      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/external/zlib-download )
-    if(result)
-      message(FATAL_ERROR "Build step for zlib failed: ${result}")
-    endif()
-    set(ZLIB ${CMAKE_CURRENT_BINARY_DIR}/external/zlib/libz.a)
-    include_directories(${CMAKE_CURRENT_BINARY_DIR}/external/zlib)
-    ExternalProject_Add(zlib
-      SOURCE_DIR        "${CMAKE_CURRENT_BINARY_DIR}/external/zlib"
-      BUILD_IN_SOURCE   1
-      BUILD_COMMAND     $(MAKE) -f ${CMAKE_CURRENT_BINARY_DIR}/external/zlib/Makefile CFLAGS=${CMAKE_C_FLAGS} CXXFLAGS=${CMAKE_CXX_FLAGS}
-      CONFIGURE_COMMAND ""
-      INSTALL_COMMAND   ""
-      TEST_COMMAND      ""
-      UPDATE_COMMAND    ""
-      )
-    include_directories(${CMAKE_CURRENT_BINARY_DIR}/external/zlib)
-  endif()
-endif()
+#   if(CMAKE_BUILD_ZLIB OR ZLIB MATCHES NOTFOUND)
+#     configure_file(CMakeLists_zlib.txt.in ${CMAKE_CURRENT_BINARY_DIR}/external/zlib-download/CMakeLists.txt)
+#     execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
+#       RESULT_VARIABLE result
+#       WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/external/zlib-download )
+#     if(result)
+#       message(FATAL_ERROR "CMake step for zlib failed: ${result}")
+#     endif()
+#     execute_process(COMMAND ${CMAKE_COMMAND} --build .
+#       RESULT_VARIABLE result
+#       WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/external/zlib-download )
+#     if(result)
+#       message(FATAL_ERROR "Build step for zlib failed: ${result}")
+#     endif()
+#     set(ZLIB ${CMAKE_CURRENT_BINARY_DIR}/external/zlib/libz.a)
+#     include_directories(${CMAKE_CURRENT_BINARY_DIR}/external/zlib)
+#     ExternalProject_Add(zlib
+#       SOURCE_DIR        "${CMAKE_CURRENT_BINARY_DIR}/external/zlib"
+#       BUILD_IN_SOURCE   1
+#       BUILD_COMMAND     $(MAKE) -f ${CMAKE_CURRENT_BINARY_DIR}/external/zlib/Makefile CFLAGS=${CMAKE_C_FLAGS} CXXFLAGS=${CMAKE_CXX_FLAGS}
+#       CONFIGURE_COMMAND ""
+#       INSTALL_COMMAND   ""
+#       TEST_COMMAND      ""
+#       UPDATE_COMMAND    ""
+#       )
+#     include_directories(${CMAKE_CURRENT_BINARY_DIR}/external/zlib)
+#   endif()
+# endif()
 
 ## Set maximum k-mer length
 if(NOT MAX_KMER_LENGTH)
@@ -144,7 +144,7 @@ ${PROJECT_BINARY_DIR}/external/sdsl-lite/build/external/libdivsufsort/include # 
 ${PROJECT_SOURCE_DIR}/KMC)
 target_link_libraries(sbwt PRIVATE
   sdsl
-  ${ZLIB}
+  zlib
   Threads::Threads
   ${CXX_FILESYSTEM_LIBRARIES}
   kmc_tools
@@ -174,7 +174,7 @@ if (BUILD_TESTS)
     ${PROJECT_SOURCE_DIR}/KMC)
   target_link_libraries(sbwt_tests PRIVATE
     gtest
-    ${ZLIB}
+    zlib
     sdsl
     Threads::Threads
     OpenMP::OpenMP_CXX
@@ -196,7 +196,7 @@ ${PROJECT_BINARY_DIR}/external/sdsl-lite/build/external/libdivsufsort/include # 
 ${PROJECT_SOURCE_DIR}/KMC)
 target_link_libraries(sbwt_static PRIVATE
   sdsl
-  ${ZLIB}
+  zlib
   Threads::Threads
   ${CXX_FILESYSTEM_LIBRARIES}
   kmc_tools
