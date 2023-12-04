@@ -67,6 +67,7 @@ configure_file(${PROJECT_SOURCE_DIR}/version.h.in ${PROJECT_BINARY_DIR}/include/
 #   endif()
 # endif()
 
+include_directories(KMC/3rd_party/cloudflare)
 ## Set maximum k-mer length
 if(NOT MAX_KMER_LENGTH)
   set(MAX_KMER_LENGTH 32)
