@@ -113,8 +113,8 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/sdsl-lite
 add_subdirectory(${PROJECT_SOURCE_DIR}/KMC
   ${PROJECT_BINARY_DIR}/external/KMC/build)
 
-add_subdirectory(${PROJECT_SOURCE_DIR}/SeqIO
-  ${PROJECT_BINARY_DIR}/external/SeqIO/build)
+#add_subdirectory(${PROJECT_SOURCE_DIR}/SeqIO
+#  ${PROJECT_BINARY_DIR}/external/SeqIO/build)
 
 file(COPY ${PROJECT_SOURCE_DIR}/SeqIO/include/ DESTINATION ${PROJECT_BINARY_DIR}/external/SeqIO/include/)
 
