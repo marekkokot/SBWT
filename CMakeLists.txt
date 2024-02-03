@@ -87,11 +87,15 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 if(CMAKE_BUILD_TYPE MATCHES Release)
-  add_compile_options(-O3)
+  if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    add_compile_options(-O3)
+  endif()
 endif()
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
-  add_compile_options(-g -Wall -Wextra -Wno-sign-compare)
+  if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    add_compile_options(-g -Wall -Wextra -Wno-sign-compare)
+  endif()
 endif()
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
