@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.26/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.26/Templates/CPackConfig.cmake.in
+D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeLists.txt
+D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake
+D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeModules/ProjectCPack.cmake
+D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake.in
+D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/VERSION.cmake
