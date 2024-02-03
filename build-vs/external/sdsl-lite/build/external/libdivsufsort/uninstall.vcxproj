@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\nauka\splash\2024-02-03\b\KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\nauka\splash\2024-02-03\b\KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\nauka\splash\2024-02-03\b\KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\nauka\splash\2024-02-03\b\KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>KMC\3rd_party\cloudflare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -105,128 +105,7 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\nauka\splash\2024-02-03\b\build-vs\CMakeFiles\966657ddc5697aabf35617af62162b32\uninstall.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\uninstall</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\uninstall</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\uninstall</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -P D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\uninstall</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeLists.txt">
-      <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/nauka/splash/2024-02-03/b -BD:/nauka/splash/2024-02-03/b/build-vs --check-stamp-file D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\AppendCompilerFlags.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\ProjectCPack.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\cmake_uninstall.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\VERSION.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/nauka/splash/2024-02-03/b -BD:/nauka/splash/2024-02-03/b/build-vs --check-stamp-file D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\AppendCompilerFlags.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\ProjectCPack.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\cmake_uninstall.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\VERSION.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/nauka/splash/2024-02-03/b -BD:/nauka/splash/2024-02-03/b/build-vs --check-stamp-file D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\AppendCompilerFlags.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\ProjectCPack.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\cmake_uninstall.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\VERSION.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/nauka/splash/2024-02-03/b/sdsl-lite/external/libdivsufsort/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/nauka/splash/2024-02-03/b -BD:/nauka/splash/2024-02-03/b/build-vs --check-stamp-file D:/nauka/splash/2024-02-03/b/build-vs/external/sdsl-lite/build/external/libdivsufsort/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Templates\CPackConfig.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\AppendCompilerFlags.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\ProjectCPack.cmake;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\CMakeModules\cmake_uninstall.cmake.in;D:\nauka\splash\2024-02-03\b\sdsl-lite\external\libdivsufsort\VERSION.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="D:\nauka\splash\2024-02-03\b\build-vs\external\sdsl-lite\build\external\libdivsufsort\CMakeFiles\uninstall">
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="D:\nauka\splash\2024-02-03\b\build-vs\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="build-vs\ZERO_CHECK.vcxproj">
       <Project>{FA347688-75AF-3CF7-8F3F-5FC00761E518}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

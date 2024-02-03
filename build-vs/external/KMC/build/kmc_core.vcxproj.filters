@@ -1,73 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\nauka\splash\2024-02-03\b\KMC\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\mem_disk_file.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\mem_disk_file.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\rev_byte.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\rev_byte.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\bkb_writer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\bkb_writer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\cpu_info.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\cpu_info.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\bkb_reader.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\bkb_reader.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\fastq_reader.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\fastq_reader.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\timer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\timer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\develop.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\develop.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_completer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_completer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_storer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_storer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kmer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kmer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\splitter.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\splitter.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_collector.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kb_collector.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kmc_runner.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_CORE_OBJS.dir\$(Configuration)\kmc_runner.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\mmer.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\mmer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\kmc_file.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\kmc_file.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\kmer_api.obj">
+    <Object Include="build-vs\external\KMC\build\KMC_API_OBJS.dir\$(Configuration)\kmer_api.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\KFF_OBJS.dir\$(Configuration)\kff_writer.obj">
+    <Object Include="build-vs\external\KMC\build\KFF_OBJS.dir\$(Configuration)\kff_writer.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\RADULS_SSE2_OBJS.dir\$(Configuration)\raduls_sse2.obj">
+    <Object Include="build-vs\external\KMC\build\RADULS_SSE2_OBJS.dir\$(Configuration)\raduls_sse2.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\RADULS_SSE41_OBJS.dir\$(Configuration)\raduls_sse41.obj">
+    <Object Include="build-vs\external\KMC\build\RADULS_SSE41_OBJS.dir\$(Configuration)\raduls_sse41.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\RADULS_AVX_OBJS.dir\$(Configuration)\raduls_avx.obj">
+    <Object Include="build-vs\external\KMC\build\RADULS_AVX_OBJS.dir\$(Configuration)\raduls_avx.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="D:\nauka\splash\2024-02-03\b\build-vs\external\KMC\build\RADULS_AVX2_OBJS.dir\$(Configuration)\raduls_avx2.obj">
+    <Object Include="build-vs\external\KMC\build\RADULS_AVX2_OBJS.dir\$(Configuration)\raduls_avx2.obj">
       <Filter>Object Libraries</Filter>
     </Object>
   </ItemGroup>

@@ -101,7 +101,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kmc_tools", "kmc_tools.vcxp
 		{62FFD44C-43BD-32A6-A241-A321361039D0} = {62FFD44C-43BD-32A6-A241-A321361039D0}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "D:\nauka\splash\2024-02-03\b\KMC\external\cloudflare\build2\zlib.vcxproj", "{62FFD44C-43BD-32A6-A241-A321361039D0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "KMC\external\cloudflare\build2\zlib.vcxproj", "{62FFD44C-43BD-32A6-A241-A321361039D0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FA347688-75AF-3CF7-8F3F-5FC00761E518} = {FA347688-75AF-3CF7-8F3F-5FC00761E518}
 	EndProjectSection
