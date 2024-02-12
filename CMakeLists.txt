@@ -115,6 +115,7 @@ find_package(Threads REQUIRED)
 add_subdirectory(${PROJECT_SOURCE_DIR}/sdsl-lite
   ${PROJECT_BINARY_DIR}/external/sdsl-lite/build)
 
+set(MAX_K ${MAX_KMER_LENGTH})
 add_subdirectory(${PROJECT_SOURCE_DIR}/KMC
   ${PROJECT_BINARY_DIR}/external/KMC/build)
 
