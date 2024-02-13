@@ -113,6 +113,7 @@ public:
 
         // Delete the KMC database files. The temp file manager can not do this because
         // KMC appends suffixes to the filename and the manager does not know about that.
+        kmc_db.close();
         std::filesystem::remove(KMC_db_path + ".kmc_pre");
         std::filesystem::remove(KMC_db_path + ".kmc_suf");
 
@@ -199,6 +200,7 @@ public:
 
         // Clean up
         for(char c : ACGT) delete char_streams[c];
+        all_stream.close();
         get_temp_file_manager().delete_file(uncompressed_db_filename);
     }
 

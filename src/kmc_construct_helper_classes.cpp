@@ -151,6 +151,11 @@ Kmer<MAX_KMER_LENGTH> Kmer_stream_from_KMC_DB::next(){
 
 }
 
+void Kmer_stream_from_KMC_DB::close()
+{
+    kmer_database->Close();
+}
+
 void Disk_Instream::update_top(){
     in.read(in_buffer, Node::size_in_bytes());
     if(in.eof()){

@@ -91,6 +91,8 @@ public:
     bool done();
     Kmer<MAX_KMER_LENGTH> next();
 
+    void close();
+
     ~Kmer_stream_from_KMC_DB();
 };
 
@@ -163,6 +165,10 @@ class SimpleSortedKmerDB{
         return x;
     }
 
+    void close()
+    {
+        in.close();
+    }
 };
 
 // This stream will always start with an empty k-mer with an empty edge label set
