@@ -77,7 +77,7 @@ class Variable_binary_block : public Generic_Block{
 
     virtual void write_to_file(string filename){
         seq_io::Buffered_ofstream<> out(filename, ios::binary);
-        for(int64_t i = 0; i < starts.size(); i++){
+        for(uint64_t i = 0; i < starts.size(); i++){
             int64_t length = parse_big_endian_LL(data + starts[i]);
             out.write(data + starts[i], length);
         }
@@ -138,7 +138,7 @@ public:
 
     virtual void write_to_file(string filename){
         seq_io::Buffered_ofstream<> out(filename, ios::binary);
-        for(int64_t i = 0; i < starts.size(); i++){
+        for(uint64_t i = 0; i < starts.size(); i++){
             out.write(data + starts[i], record_size);
         }
     }

@@ -315,7 +315,7 @@ int64_t SBWT<subset_rank_t>::forward(int64_t node, char c) const{
 
 template <typename subset_rank_t>
 int64_t SBWT<subset_rank_t>::search(const string& kmer) const{
-    assert(kmer.size() == k);
+    assert((int64_t)kmer.size() == k);
     return search(kmer.c_str());
 }
 

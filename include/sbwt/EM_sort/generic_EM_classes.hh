@@ -96,7 +96,7 @@ public:
     void open_files(vector<string> filenames){
         inputs.clear();
         inputs.resize(filenames.size());
-        for(int64_t i = 0; i < filenames.size(); i++){
+        for(uint64_t i = 0; i < filenames.size(); i++){
             inputs[i].open(filenames[i], ios::binary);
         }
     }
@@ -173,7 +173,7 @@ public:
     void open_files(vector<string> filenames){
         inputs.clear();
         inputs.resize(filenames.size());
-        for(int64_t i = 0; i < filenames.size(); i++){
+        for(uint64_t i = 0; i < filenames.size(); i++){
             inputs[i].open(filenames[i], ios::binary);
         }
     }

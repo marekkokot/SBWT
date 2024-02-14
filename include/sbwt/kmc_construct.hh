@@ -89,7 +89,7 @@ public:
         G_bits_sdsl.resize(G_bits.size());
         T_bits_sdsl.resize(T_bits.size());
         suffix_group_starts_sdsl.resize(suffix_group_starts.size());
-        for(int64_t i = 0; i < A_bits.size(); i++){
+        for(uint64_t i = 0; i < A_bits.size(); i++){
             A_bits_sdsl[i] = A_bits[i];
             C_bits_sdsl[i] = C_bits[i];
             G_bits_sdsl[i] = G_bits[i];
