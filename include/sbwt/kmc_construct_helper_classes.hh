@@ -110,7 +110,7 @@ class SimpleSortedKmerDB{
 
     // From KMC database. KMC database must be sorted!!
     SimpleSortedKmerDB(Kmer_stream_from_KMC_DB& sorted_kmc_db, string filename) : filename(filename), char_block_starts(256, INT64_MAX) {
-        seq_io::Buffered_ofstream<> out(filename);
+        seq_io::Buffered_ofstream<> out(filename, ios::binary);
         char kmer_write_buf[Kmer<MAX_KMER_LENGTH>::size_in_bytes()];
 
         while(!sorted_kmc_db.done()){
